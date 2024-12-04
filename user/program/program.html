@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="../asset/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+   </head>
+   <body>
+      <header id="header" class="header d-flex align-items-center sticky-top">
+         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+             <a href="./../index.php" class="logo d-flex align-items-center">
+                 <img src="../asset/img/icon deeniyat.png" alt="logo" >
+             </a>
+     
+             <nav id="navmenu" class="navmenu">
+                 <ul>
+                     <li><a href="./../index.php" class="active">Home</a></li>
+                     <li><a href="./../profile.html">Profile</a></li>
+                     <li><a href="program.html">Program</a></li>
+                     <li><a href="./../informasi.html">Informasi</a></li>
+                     <li><a href="./../galeri.html">Galeri</a></li>
+                     <li><a href="./../kontak.html">Kontak</a></li>
+                     <li>
+                         <input class="search-bar" type="text" placeholder="Search..." >
+                     </li>
+                 </ul>
+             </nav>
+
+            <!-- <div class="auth-links-logout" style="margin-right: 10px; margin-top: 38px;">
+                <a href="./../logout.php" class="auth-link-logout" style="margin-right: 10px; ">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>                
+            </div> -->
+         </div>
+     </header>
+
+      <main class="main" >
+         <h1 style="text-align: center; color: black; font-size: 20px;">Program Kami</h1>
+         <p style="margin-left:20px;">Kami memiliki beberapa program unggulan yang dapat membedakan lembaga Pelatihan Deeniyat dengan lainnya, berikut adalah 5 daftar program unggulan yang ada pada Deeniyat :</p>
+         <div class="container" >
+            <div class="card__container" style="margin-left: 75px;">
+               <article class="card__article">
+                  <img src="assets/img/alquran.jpg" alt="image" class="card__img">
+                  
+                  <div class="card__data">
+                      <span class="card__description">Program 1</span>
+                      <h2 class="card__title">Program Pelatihan Qur`an</h2>
+                      
+                      <p class="card__extra-text" style="display: none;">
+                        Dalam program pelatihan ini kita akan mempelajari tentang Makharijul Huruf, Tajwid, Hafalan Surat. 
+                        <br>
+                        <button style="width: 8rem; margin-top: 1rem; margin-bottom: 2rem;">
+                           <a href="./formPendaftaran.php" style="text-decoration: none;  color: white;">daftar sekarang</a>
+                        </button>
+                          
+                     </p>
+                      
+                      <a href="#" class="card__button" onclick="toggleReadMore(event)">Read More</a>
+                  </div>
+              </article>
+   
+               <article class="card__article">
+                  <img src="assets/img/hadits.png" alt="image" class="card__img">
+                  
+                  <div class="card__data">
+                      <span class="card__description">Program 2</span>
+                      <h2 class="card__title">Program Pelatihan Hadits</h2>
+                      
+                      <p class="card__extra-text" style="display: none;">
+                        Dalam program pelatihan ini kita akan mempelajari tentang Doa Sunnah, dan Hafalan Hadits. 
+                        <br>
+                        <button style="width: 8rem; margin-top: 1rem; margin-bottom: 2rem;">
+                           <a href="./formPendaftaran.php" style="text-decoration: none;  color: white;">daftar sekarang</a>
+                        </button>
+                          
+                     </p>
+                      
+                      <a href="#" class="card__button" onclick="toggleReadMore(event)">Read More</a>
+                  </div>
+              </article>
+   
+              <article class="card__article">
+               <img src="assets/img/aqidah.jpg" alt="image" class="card__img">
+               
+               <div class="card__data">
+                   <span class="card__description">Program 3</span>
+                   <h2 class="card__title">Program Pelatihan Aqidah Fiqih</h2>
+                   
+                   <p class="card__extra-text" style="display: none;">
+                     Dalam program pelatihan ini kita akan mempelajari tentang Sholawat, Bacaan Sholat dan Hukum Islam. 
+                     <br>
+                     <button style="width: 8rem; margin-top: 1rem; margin-bottom: 2rem;">
+                        <a href="./formPendaftaran.php" style="text-decoration: none;  color: white;">daftar sekarang</a>
+                     </button>
+                       
+                  </p>
+                   
+                   <a href="#" class="card__button" onclick="toggleReadMore(event)">Read More</a>
+               </div>
+           </article>
+            </div>
+         </div>
+         <div class="container">
+            <div class="card__container" style="margin-left: 75px;">
+               <article class="card__article">
+                  <img src="assets/img/pendidikan.jpg" alt="image" class="card__img">
+                  
+                  <div class="card__data">
+                      <span class="card__description">Program 4</span>
+                      <h2 class="card__title">Program Pelatihan Pendidikan Islam</h2>
+                      
+                      <p class="card__extra-text" style="display: none;">
+                        Dalam program pelatihan ini kita akan mempelajari tentang Sirah Nabawiyyah, dan Pidato. 
+                        <br>
+                        <button style="width: 8rem; margin-top: 1rem; margin-bottom: 2rem;">
+                           <a href="./formPendaftaran.php" style="text-decoration: none;  color: white;">daftar sekarang</a>
+                        </button>
+                          
+                     </p>
+                      
+                      <a href="#" class="card__button" onclick="toggleReadMore(event)">Read More</a>
+                  </div>
+              </article>
+   
+               <article class="card__article">
+                  <img src="assets/img/arab.jpg" alt="image" class="card__img">
+                  
+                  <div class="card__data">
+                      <span class="card__description">Program 5</span>
+                      <h2 class="card__title">Program Pelatihan Bahasa Arab</h2>
+                      
+                      <p class="card__extra-text" style="display: none;">
+                        Dalam program pelatihan ini kita akan mempelajari tentang hitungan menggunakan bahasa arab, mengenal Benda-benda sekitar dengan bahasa arab, Arab Melayu. 
+                        <br>
+                        <button style="width: 8rem; margin-top: 1rem; margin-bottom: 2rem;">
+                           <a href="./formPendaftaran.php" style="text-decoration: none;  color: white;">daftar sekarang</a>
+                        </button>
+                          
+                     </p>
+                      
+                      <a href="#" class="card__button" onclick="toggleReadMore(event)">Read More</a>
+                  </div>
+              </article>
+   
+            </div>
+         </div>
+   
+      </main>
+      <script>
+         function toggleReadMore(event) {
+             event.preventDefault();
+         
+             const extraText = event.target.previousElementSibling; 
+             const buttonText = event.target;
+         
+             if (extraText.style.display === "none") {
+                 extraText.style.display = "block";
+                 buttonText.textContent = "Read Less"; 
+             } else {
+                 extraText.style.display = "none";
+                 buttonText.textContent = "Read More";
+             }
+         }
+         </script>
+
+<footer class="footer">
+   <div class="container" style="height: 95px;">
+       <div class="footer-content">
+           <div class="footer-logo">
+               <img src="../asset/img/icon deeniyat.png" alt="" width="80px">
+           </div>
+           <div class="footer-info">
+               <h4>Deeniyat</h4>
+               <p>
+                   sebuah lembaga pelatihan yang hadir dengan tidak hanya melalui pengajaran teori,tetapi juga pendekatan praktis.
+               </p>
+           </div>
+           <div class="footer-address">
+               <a href="https://maps.app.goo.gl/JDwKuq8umiLVQ7wL8">
+                   <i class="fa-solid fa-map-location-dot icon-social"></i>                </a>
+               
+               <p>
+                   Jl. Sukaluyu Pasir Biru, Kec. Cibiru, Kota Bandung, Jawa Barat 40615
+               </p>
+           </div>
+           
+           <div class="footer-social">
+               <h4>Follow us</h4>
+               <p>
+               <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                   <i class="fab fa-instagram icon-social"></i>                    <!-- <img src="icon/instagram.png" alt=""> -->
+               </a>
+               <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                   <i class="fab fa-twitter icon-social"></i>                    <!-- <img src="icon/instagram.png" alt=""> -->
+               </a>
+               <a href="https://wa.me/6281234567890" target="_blank" class="social-icon">
+                   <i class="fab fa-whatsapp icon-social"></i>                    <!-- <img src="icon/instagram.png" alt=""> -->
+               </a>
+               <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+                   <i class="fab fa-youtube icon-social"></i>                    <!-- <img src="icon/instagram.png" alt=""> -->
+               </a>
+           </p>
+           </div>
+          
+       </div>
+   </div>
+   </footer>
+   </body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi</title>
+    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+            <a href="index.php" class="logo d-flex align-items-center">
+                <img src="asset/img/icon deeniyat.png" alt="logo" >
+            </a>
+    
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.php" class="active">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="./program/program.html">Program</a></li>
+                    <li><a href="informasi.html">Informasi</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                    <li>
+                        <input class="search-bar" type="text" placeholder="Search..." >
+                    </li>
+                </ul>
+            </nav>
+    
+            <!-- <div class="auth-links-logout" style="margin-right: 10px; margin-top: 38px;">
+                <a href="./../logout.php" class="auth-link-logout" style="margin-right: 10px; ">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>                
+            </div> -->
+        </div>
+    </header>
+    
+    <main class="main">
+
+        <section id="informasi" class="informasi section">
+            <div id="informasi-content" class="informasi-content">
+                <h2 style="text-align: center;">Informasi</h2>
+            <div class="container-informasi">
+                <div class="left-info">
+                    <h3>Metodologi Pembelajaran</h3>
+                    <p>
+                       Deeniyat adalah Program Pembinaan Intensif Pendidikan Agama untuk anak, remaja, hingga dewasa, dengan durasi 1 jam setiap hari. Materi disesuaikan dengan kebutuhan, kemampuan, dan psikologi anak, sehingga mereka dapat menghafal, menghayati, dan mengamalkan ilmu dalam kehidupan sehari-hari untuk membentuk karakter Islami. 
+                    </p>   
+                    <p>
+                        Metode Deeniyat telah diriset dan diterapkan di Indonesia sejak tahun 2009, dan mulai aktif membentuk Madrasah Deeniyat Percontohan dengan sosialisasi dan publikasi sejak tahun 2011 di bawah Yayasan Deeniyat Nusantara, sebagai pusat pengembangan sistem dan manajemen Madrasah Deeniyat. 
+                    </p>
+                       Deeniyat Al Hidayah Cikuda, salah satu cabang dari Yayasan ini, didirikan pada tahun 2013 dan berlokasi di Jl. Sukaluyu No.03, Bandung, Jawa Barat, Indonesia. Logo perusahaan mengadopsi bentuk Cap Rasulullah Saw., mencerminkan semangat untuk mengembalikan agama ke zaman Nabi Muhammad Saw. Visi Deeniyat adalah menjadi Program Diniyah berstandar nasional yang tersebar di Nusantara, dengan misi memberikan solusi pendidikan agama untuk anak, remaja, dan dewasa, serta menjadi pusat publikasi, pengembangan sistem, manajemen, dan pengontrolan pelaksanaan metode Deeniyat di seluruh Nusantara.
+                      
+                </div> 
+                <div class="right-info">
+                    <h3>Silabus 16 Tahun</h3>
+                    <ul>
+                        <li>Silabus Usia Dini 1 tahun (Setara untuk siswa TK)</li>
+                        <li>Silabus Dasar 6 tahun (Setara siswa SD)</li>
+                        <li>Silabus Menengah 3 tahun (Setara untuk siswa SMP)</li>
+                        <li>Silabus Menengah Atas 3 tahun (Setara untuk siswa SMA)</li>
+                        <li>Silabus Lanjutan 3 tahun (Setara untuk Mahasiswa)</li>
+                    </ul>
+
+                    <h3>Fasilitas Pembelajaran</h3>
+                    <p>
+                        Fasilitas yang tersedia di Deeniyat mencakup ruang kelas yang nyaman, perpustakaan, dan ruang praktikum yang mendukung proses belajar mengajar. Semua fasilitas dirancang untuk menciptakan lingkungan belajar yang efektif dan menyenangkan bagi semua siswa.
+                    </p>
+
+                    <h3>Program Ekstrakurikuler</h3>
+                    <p>
+                     Selain pelajaran akademis, Deeniyat juga menawarkan berbagai program ekstrakurikuler, seperti olahraga, seni, dan kegiatan sosial. Program ini bertujuan untuk mengembangkan bakat dan minat siswa di luar kurikulum akademis, serta membangun keterampilan sosial dan kepemimpinan.
+                    </p>
+                </div>
+            </div>
+
+                <div style="text-align: left; margin: 20px;">
+                    <input type="text" id="searchInput" placeholder="Cari program..." onkeyup="filterTable()" style="padding: 10px; width: 80%; max-width: 400px;">
+                </div>
+                <table style="width:90%; border-collapse: collapse; text-align: left; margin: 20px;">
+                    <thead>
+                        <tr>
+                            <th style="border: 1px solid #000; padding: 8px;">No</th>
+                            <th style="border: 1px solid #000; padding: 8px;">Kriteria</th>
+                            <th style="border: 1px solid #000; padding: 8px;">Nama Program</th>
+                            <th style="border: 1px solid #000; padding: 8px;">Harga Per Bulan</th>
+                            <th style="border: 1px solid #000; padding: 8px;">Jumlah Pertemuan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px;">1</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Usia Dini - SD</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Pelatihan Qur`an</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Rp 250,000</td>
+                            <td style="border: 1px solid #000; padding: 8px;">2x per minggu</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px;">2</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Usia Dini - SD</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Pelatihan Hadits</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Rp 250,000</td>
+                            <td style="border: 1px solid #000; padding: 8px;">2x per minggu</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px;">3</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Usia Dini - SD</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Pelatihan Aqidah Fiqih</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Rp 250,000</td>
+                            <td style="border: 1px solid #000; padding: 8px;">2x per minggu</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px;">4</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Usia Dini - SD</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Pelatihan Pendidikan Islam</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Rp 250,000</td>
+                            <td style="border: 1px solid #000; padding: 8px;">2x per minggu</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px;">5</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Usia Dini - SD</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Pelatihan Bahasa Arab</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Rp 250,000</td>
+                            <td style="border: 1px solid #000; padding: 8px;">2x per minggu</td>
+                        </tr>
+
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px;">6</td>
+                            <td style="border: 1px solid #000; padding: 8px;">SMP - Mahasiswa</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Pelatihan Qur`an</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Rp 500,000</td>
+                            <td style="border: 1px solid #000; padding: 8px;">2x per minggu</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px;">7</td>
+                            <td style="border: 1px solid #000; padding: 8px;">SMP - Mahasiswa</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Pelatihan Hadits</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Rp 500,000</td>
+                            <td style="border: 1px solid #000; padding: 8px;">2x per minggu</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px;">8</td>
+                            <td style="border: 1px solid #000; padding: 8px;">SMP - Mahasiswa</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Pelatihan Aqidah Fiqih</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Rp 500,000</td>
+                            <td style="border: 1px solid #000; padding: 8px;">2x per minggu</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px;">9</td>
+                            <td style="border: 1px solid #000; padding: 8px;">SMP - Mahasiswa</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Pelatihan Pendidikan Islam</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Rp 500,000</td>
+                            <td style="border: 1px solid #000; padding: 8px;">2x per minggu</td>
+                        </tr>
+                        <tr>
+                            <td style="border: 1px solid #000; padding: 8px;">10</td>
+                            <td style="border: 1px solid #000; padding: 8px;">SMP - Mahasiswa</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Pelatihan Bahasa Arab</td>
+                            <td style="border: 1px solid #000; padding: 8px;">Rp 500,000</td>
+                            <td style="border: 1px solid #000; padding: 8px;">2x per minggu</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+
+            
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="asset/img/icon deeniyat.png" alt="" width="80px">
+                </div>
+                <div class="footer-info">
+                    <h4>Deeniyat</h4>
+                    <p>
+                        sebuah lembaga pelatihan yang hadir dengan tidak hanya melalui pengajaran teori,tetapi juga pendekatan praktis.
+                    </p>
+                </div>
+                <div class="footer-address">
+                    <a href="https://maps.app.goo.gl/JDwKuq8umiLVQ7wL8">
+                        <i class="fa-solid fa-map-location-dot icon-social"></i>                </a>
+                    
+                    <p>
+                        Jl. Sukaluyu Pasir Biru, Kec. Cibiru, Kota Bandung, Jawa Barat 40615
+                    </p>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow us</h4>
+                    <p>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram icon-social"></i>                    <!-- <img src="icon/instagram.png" alt=""> -->
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                        <i class="fab fa-twitter icon-social"></i>                    <!-- <img src="icon/instagram.png" alt=""> -->
+                    </a>
+                    <a href="https://wa.me/6281234567890" target="_blank" class="social-icon">
+                        <i class="fab fa-whatsapp icon-social"></i>                    <!-- <img src="icon/instagram.png" alt=""> -->
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-youtube icon-social"></i>                    <!-- <img src="icon/instagram.png" alt=""> -->
+                    </a>
+                </p>
+                </div>
+               
+            </div>
+        </div>
+        </footer>
+</body>
+
+      
+
+    
+</html>
